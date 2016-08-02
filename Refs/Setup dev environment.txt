@@ -1,0 +1,6 @@
+--Follow steps here:
+https://docs.angularjs.org/tutorial#get-started
+
+--npm must be installed for the operating system. 
+--Then go to the directory you want, and load it using the command:
+$npm install

@@ -1,0 +1,5 @@
+Quick Ref:
+http://www.revillweb.com/tutorials/angularjs-in-30-minutes-angularjs-tutorial/
+
+Another Ref:
+http://www.w3schools.com/angular/default.asp
