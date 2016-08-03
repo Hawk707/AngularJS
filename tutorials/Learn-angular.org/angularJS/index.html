@@ -64,10 +64,19 @@
 	<!--Visibility starts here-->
 	<p>---------------------------Repeaters---------------------------</p>
 	<div ng-controller="index">
-	
+		<div><input type="checkbox" ng-model="isFirstElementVisible"/> Is first element visible</div>
+		<div><input type="checkbox" ng-model="isSecondElementVisible"/> Is second element visible</div>
+		<div ng-show="isFirstElementVisible">First Element</div>
+		<div ng-if="isSecondElementVisible">Second Element</div>
 	<div>
 	<!--Visibility ends here here-->
-  
+	
+	<!--The Value Recipe starts here-->
+	<p>---------------------------Repeaters---------------------------</p>
+    <div ng-controller="index">
+	
+	<div>
+	<!--The Value Recipe ends here-->
  
 
 </body>

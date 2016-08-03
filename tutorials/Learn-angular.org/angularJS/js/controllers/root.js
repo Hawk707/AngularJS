@@ -30,4 +30,11 @@ app.controller("index", function($scope) {
 			{id: 4, name: "Lacrosse stick"}
 		];
 		
+		//Visibility
+		$scope.isFirstElementVisible = true;
+		$scope.isSecondElementVisible = true;
+		
+		//The value Recipe
+		
+		
 });
