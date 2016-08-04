@@ -1,6 +1,7 @@
-var app = angular.module("app", []);
-app.controller("index", function($scope) {
+var app = angular.module("app", ["services"]);
+app.controller("index", ["$scope", "message1", function($scope, message1) {   //before injecting "services" module, this line was like this: "app.controller("index", function($scope) {" ==> remove the ] at the end of the file also
   $scope.message = "Hello, AngularJS!";	
+  $scope.message1 = message1;  //message1 is defined in services.js module
         
 		//Two-way binding start
 		$scope.favoriteWord;
@@ -37,4 +38,4 @@ app.controller("index", function($scope) {
 		//The value Recipe
 		
 		
-});
+}]);
