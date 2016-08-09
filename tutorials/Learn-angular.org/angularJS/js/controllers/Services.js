@@ -1,2 +1,5 @@
 angular.module("services", [])
-    .value("message1", "Hello world!");
+	.value("factor", 6)
+	.factory("square", ["factor", function (factor) {
+			return factor * factor;
+	}]);
