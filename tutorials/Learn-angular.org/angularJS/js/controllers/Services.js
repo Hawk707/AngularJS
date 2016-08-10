@@ -3,3 +3,4 @@ angular.module("services", [])
 	.factory("square", ["factor", function (factor) {
 			return factor * factor;
 	}]);
+	//.service("multiplier", ["factor", Multiplier]);
