@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+  <script type="text/javascript" src="js\controllers\root.js"></script> 
+  <link rel="stylesheet" type="text/css" href="css\custom.css">
+</head>
+<body ng-app="app">
+	<div ng-controller="index">
+		<h2>{{message}}</h2>
+	</div>
+	<!--Two-way bindings starts here-->
+	<p>---------------------------Two ways binding-----------------------------</p>
+	<div>
+	Favorite word: <input type="text" ng-model="favoriteWord"/> {{favoriteWord}} </div>
+	<div>
+	Favorite color:
+	<input type="radio" name="fc" value="Red" ng-model="favoriteColor">Red</input>
+	<input type="radio" name="fc" value="Green" ng-model="favoriteColor">Green</input>
+	<input type="radio" name="fc" value="Yellow" ng-model="favoriteColor">Yellow</input>
+	<input type="radio" name="fc" value="Blue" ng-model="favoriteColor">Blue</input>
+	{{favoriteColor}}
+	</div>
+	
+	<div>
+	Favorite Shape:
+	<select ng-model="favoriteShape">
+	<option value="Circle">Circle</option>
+	<option value="Triangle">Triangle</option>
+	<option value="Square">Square</option>
+	</select>
+	{{favoriteShape}}
+	</div>
+	<!--Two-way bindings ends here-->
+	<!--Binding CSS classes starts here-->
+	<p>---------------------------Binding CSS classes--did not work---------------------------</p>
+    <input type="text" ng-model="value"/>
+	<span ng-class="{bold: isBold(), italic: isItalic(), underline: isUnderlined()}">
+	  Example Text
+    </span>
+	<!--Binding CSS classes ends here-->
+	
+	<!--Repeaters starts here-->
+	<p>---------------------------Repeaters---------------------------</p>
+
+</body>
+
+</html>
