@@ -2,11 +2,21 @@
 <html lang="en">
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-resource.js"></script>
   <script type="text/javascript" src="js\controllers\root.js"></script> 
   <script type="text/javascript" src="js\controllers\Services.js"></script> 
   <link rel="stylesheet" type="text/css" href="css\custom.css">
 </head>
 <body ng-app="app">
+<style>
+	input.ng-dirty.ng-valid {
+		border-color: green;
+	}
+	
+	input.ng-dirty.ng-invalid {
+		border-color: red;
+	}
+</style>
 	<div ng-controller="index">
 		<h2>{{message}}</h2>
 		<h2 style="background-color:yellow">Make sure you wrap your code with 'div ng-controller="index">'</h2>
@@ -92,6 +102,21 @@
 		
 	</div>
 	<!--The Service Recipe ends here-->
+	
+	<!--The $watch starts here-->
+	<p>---------------------------$watch--------------------</p>
+    <div ng-controller="index">
+		<input type="text" ng-model="factorVal"/>{{productVal}}
+	</div>
+	<!--The $watch ends here-->
+	
+	<!--The $Filters starts here-->
+	<p>---------------------------$watch--------------------</p>
+    <div ng-controller="index">
+		<p>Name: <input type="text" ng-model="name" required /></p>
+		<p>Email: <input type="email" ng-model="email" /></p>
+	</div>
+	<!--The $Filters ends here-->
 </body>
 
 </html>

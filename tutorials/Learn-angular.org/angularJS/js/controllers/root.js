@@ -37,5 +37,13 @@ app.controller("index", ["$scope", /*"message1",*/ "square", function($scope, /*
 		
 		//The value Recipe
 		
+		//$watch
+		$scope.$watch("factor", function(newValue){
+			$scope.productVal = newValue * 2;
+		});
+		$scope.factorVal = 6;
 		
+		//Data Validation
+		$scope.name;
+		$scope.email;
 }]);
